@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
+    background: #f0f0f7;
     font-family: iransans-fa !important;
 }
 
@@ -453,7 +454,7 @@ header {
 
 .rayyar-product-box {
     border-radius: 2px;
-    box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
 }
 
 .rayyar-product-box-header {
@@ -471,6 +472,7 @@ header {
     z-index: 4;
     background: #fff;
     padding: 15px;
+    box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.16) !important;
 }
 
 .rayyar-product-box-header ul {
@@ -985,4 +987,126 @@ span.step {
 
 .new-hashtag i {
     color: #e81159;
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    float: right;
+    background: #ffffff;
+}
+
+.footer-wrap {
+    padding: 20px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer-pic1 img {
+    width: 183px;
+    bottom: 0;
+}
+
+.footer-pic2 {
+    width: 125px;
+    bottom: 0;
+}
+
+.footer-wrap ul {
+    list-style: none;
+}
+
+.footer-wrap a {
+    text-decoration: none;
+    color: #5d5959;
+    font-size: 15px;
+}
+
+.swiper-container2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.products-slider .swiper-slide{
+    background-color: #ffffff !important;
+}
+
+.product-slider-btn{
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    background-color: #00e0b6;
+    color: #ffffff;
+    padding: 5px 15px;
+}
+
+.swiper-button-prev {
+    background-image: url("../img/Path2.png") !important;
+    position: absolute !important;
+    right: -5px !important;
+    padding: 0 10px !important;
+}
+  
+.swiper-button-next {
+    background-image: url("../img/Path1.png") !important;
+    position: absolute !important;
+    left: -5px !important;
+    padding: 0 10px !important;
+}
+
+.totop-icon {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin-left: 10px;
+    font-size: 24px;
+    color: rgb(167, 167, 167);
+}
+
+.totop-text {
+    height: 40px;
+    line-height: 40px;
+}
+
+.seller-product-image img {
+    width: 150px;
+    border-radius: 8px;
+}
+
+.seller-product-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(257deg, #2699fb, #1d79ee);
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.news-slider-card-wrap {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+}
+
+.news-slider-card-header-img img {
+    width: 100%;
+    height: 150px;
+}
+
+.news-slider-card-content {
+    padding: 20px;
 }
