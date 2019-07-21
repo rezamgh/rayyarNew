@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="node_modules/swiper-master/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="icon" href="assets/img/logo (2).png">
@@ -268,18 +270,576 @@
                 <img src="assets/img/Group 2818.png" alt="">
                 <img src="assets/img/مرجع تحلیل و بررسی آنلاین.png" alt="">
             </div>
-            <div class="search-box-wrap">
-                <form action="">
-                    <input type="text">
-                    <button class="search-btn"></button>
+            <div class="index-search-form">
+                <form action="" class="d-flex flex-row">
+                    <input type="text" placeholder="جستجو کنید">
+                    <button class="index-search-btn"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </div>
     </div>
 
+    <div class="w-100 float-right" style="background: #fff;">
+        <div class="index-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <div class="index-wrap-box text-center my-3">
+                            <img src="assets/img/icon/graph.svg" alt="">
+                        </div>
+                        <div class="title-color1-bold text-center mt-2" style="font-size: 16px;">جستجو کنید</div>
+                        <div class="content-color1 text-center my-2" style="font-size: 14px;">
+                            مقایسه کنید و بهترین را انتخاب کنید
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                            <div class="index-wrap-box text-center my-3">
+                                <img src="assets/img/icon/bars.svg" alt="">
+                            </div>
+                            <div class="title-color1-bold text-center mt-2" style="font-size: 16px;">مقایسه</div>
+                            <div class="content-color1 text-center my-2" style="font-size: 14px;">
+                                مقایسه کنید و بهترین را انتخاب کنید
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column align-items-center">
+                                <div class="index-wrap-box text-center my-3">
+                                    <img src="assets/img/icon/comment.svg" alt="">
+                                </div>
+                                <div class="title-color1-bold text-center mt-2" style="font-size: 16px;">بررسی محصول</div>
+                                <div class="content-color1 text-center my-2" style="font-size: 14px;">
+                                    در مورد محصول بیشتر بدانیدو نظرات دیگران را بخوانید
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 float-right" style="background: #f7f7f7;">
+        <div class="index-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-box">
+                                    <div class="d-flex justify-content-around">
+                                        <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                        <div>
+                                            <img src="assets/img/icon/Group 2804.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                                <a href="#">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                </div>
+                <div class="row mt-4">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-box">
+                                    <div class="d-flex justify-content-around">
+                                        <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                        <div>
+                                            <img src="assets/img/icon/Group 2804.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                                <a href="#">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="category-box">
+                                            <div class="d-flex justify-content-around">
+                                                <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                                <div>
+                                                    <img src="assets/img/icon/Group 2804.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                    </div>
+                    <div class="row mt-4">
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                    <a href="#">
+                                        <div class="category-box">
+                                            <div class="d-flex justify-content-around">
+                                                <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                                <div>
+                                                    <img src="assets/img/icon/Group 2804.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                        <a href="#">
+                                            <div class="category-box">
+                                                <div class="d-flex justify-content-around">
+                                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                                    <div>
+                                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 float-right" style="background: #f0f0f7;">
+        <div class="index-wrap">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news-slider-card-wrap">
+                            <div class="news-slider-card-header-img">
+                                <img src="assets/img/rayyar pic 1-01.png" alt="">
+                            </div>
+                            <div class="news-slider-card-content">
+                                <div class="news-slider-card-content-title text-right" style="font-size: 15px; font-weight: bold; color: #000;">
+                                    شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ
+                                </div>
+                                <div class="news-slider-card-content-text text-right my-2" style="font-size: 13px; color: #797979; text-align: justify;">
+                                    به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی و صفحه‌نمایش باکیفیت و امکانات متعدد هستند.
+                                </div>
+                                <div class="news-slider-card-content-more-btn text-left my-2">
+                                    <button class="product-slider-btn">بیشتر</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="news-slider-card-wrap">
+                                <div class="news-slider-card-header-img">
+                                    <img src="assets/img/rayyar pic 1-01.png" alt="">
+                                </div>
+                                <div class="news-slider-card-content">
+                                    <div class="news-slider-card-content-title text-right" style="font-size: 15px; font-weight: bold; color: #000;">
+                                        شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ
+                                    </div>
+                                    <div class="news-slider-card-content-text text-right my-2" style="font-size: 13px; color: #797979; text-align: justify;">
+                                        به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی و صفحه‌نمایش باکیفیت و امکانات متعدد هستند.
+                                    </div>
+                                    <div class="news-slider-card-content-more-btn text-left my-2">
+                                        <button class="product-slider-btn">بیشتر</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                                <div class="news-slider-card-wrap">
+                                    <div class="news-slider-card-header-img">
+                                        <img src="assets/img/rayyar pic 1-01.png" alt="">
+                                    </div>
+                                    <div class="news-slider-card-content">
+                                        <div class="news-slider-card-content-title text-right" style="font-size: 15px; font-weight: bold; color: #000;">
+                                            شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ
+                                        </div>
+                                        <div class="news-slider-card-content-text text-right my-2" style="font-size: 13px; color: #797979; text-align: justify;">
+                                            به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی و صفحه‌نمایش باکیفیت و امکانات متعدد هستند.
+                                        </div>
+                                        <div class="news-slider-card-content-more-btn text-left my-2">
+                                            <button class="product-slider-btn">بیشتر</button>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="swiper-slide">
+                                    <div class="news-slider-card-wrap">
+                                        <div class="news-slider-card-header-img">
+                                            <img src="assets/img/rayyar pic 1-01.png" alt="">
+                                        </div>
+                                        <div class="news-slider-card-content">
+                                            <div class="news-slider-card-content-title text-right" style="font-size: 15px; font-weight: bold; color: #000;">
+                                                شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ
+                                            </div>
+                                            <div class="news-slider-card-content-text text-right my-2" style="font-size: 13px; color: #797979; text-align: justify;">
+                                                به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی و صفحه‌نمایش باکیفیت و امکانات متعدد هستند.
+                                            </div>
+                                            <div class="news-slider-card-content-more-btn text-left my-2">
+                                                <button class="product-slider-btn">بیشتر</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="news-slider-card-wrap">
+                                <div class="news-slider-card-header-img">
+                                    <img src="assets/img/rayyar pic 1-01.png" alt="">
+                                </div>
+                                <div class="news-slider-card-content">
+                                    <div class="news-slider-card-content-title text-right" style="font-size: 15px; font-weight: bold; color: #000;">
+                                        شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ
+                                    </div>
+                                    <div class="news-slider-card-content-text text-right my-2" style="font-size: 13px; color: #797979; text-align: justify;">
+                                        به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی و صفحه‌نمایش باکیفیت و امکانات متعدد هستند.
+                                    </div>
+                                    <div class="news-slider-card-content-more-btn text-left my-2">
+                                        <button class="product-slider-btn">بیشتر</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 float-right" style="background: #f7f7f7;">
+        <div class="index-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="progress-circle progress-circle1"></div>
+                        <div class="text-center title-color1-bold mt-3" style="font-size: 14px">تعداد نظرات</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="progress-circle progress-circle2"></div>
+                        <div class="text-center title-color1-bold mt-3" style="font-size: 14px">تعداد کاربران</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="progress-circle progress-circle3"></div>
+                        <div class="text-center title-color1-bold mt-3" style="font-size: 14px">میانگین امتیاز محصولات</div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="progress-circle progress-circle4"></div>
+                        <div class="text-center title-color1-bold mt-3" style="font-size: 14px">تعداد رای ثبت شده</div>
+                    </div>
+                    <div class="col-md-2">
+                            <div class="progress-circle progress-circle5"></div>
+                            <div class="text-center title-color1-bold mt-3" style="font-size: 14px">تعداد رای ثبت شده</div>
+                        </div>
+                        <div class="col-md-2">
+                                <div class="progress-circle progress-circle6"></div>
+                                <div class="text-center title-color1-bold mt-3" style="font-size: 14px">تعداد رای ثبت شده</div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            <div class="footer-wrap">
+                <div class="container">
+                    <div class="row pb-5" style="border-bottom: 1px solid #bebebe;">
+                        <div class="col-md-3 text-right mt-auto" style="padding: 0 !important">
+                            <ul>
+                                <li><a href="#">پرسش و پاسخ</a></li>
+                                <li class="mt-1"><a href="#">بلاگ رای‌یار</a></li>
+                                <li class="mt-1"><a href="#">دسته‌بندی موضوعی</a></li>
+                                <li class="mt-1"><a href="#">صفحه‌اصلی</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-right mt-auto" style="padding: 0 !important">
+                            <ul>
+                                <li><a href="#">درباره رای‌یار</a></li>
+                                <li class="mt-1"><a href="#">حریم خصوصی</a></li>
+                                <li class="mt-1"><a href="#">راهنمای سایت</a></li>
+                                <li class="mt-1"><a href="#">درباره عضویت ویژه</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-left footer-pic1 mt-auto" style="padding: 0 !important">
+                            <img src="assets/img/c4abfc14.png" alt="">
+                            <img src="assets/img/1090a120.png" alt="">
+                        </div>
+                        <div class="col-md-3 text-left footer-pic2 mt-auto" style="padding: 0 !important">
+                            <img src="assets/img/logo.aspx.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row py-3 text-center">
+                        <p class="copy-right mx-auto" style="color: #5d5959; font-size: 12px; font-weight: bold;">
+                            استفاده از مطالب این سایت با ذکر منبع بلامانع می‌باشد. تمام حقوق این سایت محفوظ و متعلق به شرکت «رای‌یار» می‌باشد
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="node_modules/swiper-master/dist/js/swiper.min.js"></script>
+    <script src="node_modules/progressbar.js-master/dist/progressbar.min.js"></script>
     <script src="assets/script/main.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1200: { slidesPerView: 2 },
+            992: { slidesPerView: 1 },
+        }
+    });
+
+
+
+
+
+
+
+
+
+    var bar = new ProgressBar.Circle('.progress-circle1', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+
+
+
+
+
+
+
+
+var bar = new ProgressBar.Circle('.progress-circle2', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+var bar = new ProgressBar.Circle('.progress-circle3', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+var bar = new ProgressBar.Circle('.progress-circle4', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+var bar = new ProgressBar.Circle('.progress-circle5', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+
+
+var bar = new ProgressBar.Circle('.progress-circle6', {
+  color: '#2699fb',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 4,
+  trailWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#9dc7ec', width: 1 },
+  to: { color: '#2699fb', width: 4 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar.text.style.fontSize = '1.5rem';
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
+
+    </script>
 
 </body>
 </html>

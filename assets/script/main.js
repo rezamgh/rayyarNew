@@ -100,6 +100,8 @@ $(document).ready(function(){
     //product tab content --end
 
 
+
+
     //product questions
 
     var form_count = 1, form_count_form, next_form, total_forms;
@@ -189,7 +191,7 @@ $(document).ready(function(){
 
 
 
-    //news swiper slider
+    //product page news swiper slider
 
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
@@ -205,8 +207,25 @@ $(document).ready(function(){
             600: { slidesPerView: 1 }
         }
     });
-    //news swiper slider --end
+    //product page news swiper slider --end
 
+
+    //index page news swiper slider
+
+    var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1200: { slidesPerView: 2 },
+            992: { slidesPerView: 1 },
+        }
+    });
+    //index page news swiper slider --end
 
 
 
