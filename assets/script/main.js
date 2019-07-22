@@ -2,56 +2,107 @@ $(document).ready(function(){
 
     //product page charts
 
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'bar',
+    // var ctx = document.getElementById('myChart').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
 
-        // The data for our dataset
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: '#7a3997',
-                borderColor: '#7a3997',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        }
-    });
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#7a3997',
+    //             borderColor: '#7a3997',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
 
-    var ctx = document.getElementById('myChart2').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'bar',
+    // var ctx = document.getElementById('myChart2').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
 
-        // The data for our dataset
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: '#e81159',
-                borderColor: '#e81159',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        }
-    });
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#e81159',
+    //             borderColor: '#e81159',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
 
-    var ctx = document.getElementById('myChart3').getContext('2d');
-    var chart = new Chart(ctx, {
-        // The type of chart we want to create
-        type: 'radar',
+    // var ctx = document.getElementById('myChart3').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'radar',
 
-        // The data for our dataset
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [{
-                label: 'My First dataset',
-                backgroundColor: '#5bc84d',
-                borderColor: '#5bc84d',
-                data: [0, 10, 5, 2, 20, 30, 45]
-            }]
-        }
-    });
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#5bc84d',
+    //             borderColor: '#5bc84d',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
+
+    // var ctx = document.getElementById('myChart4').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
+
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#0083ed',
+    //             borderColor: '#0083ed',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
+
+    // var ctx = document.getElementById('myChart5').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
+
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#0083ed',
+    //             borderColor: '#0083ed',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
+
+    // var ctx = document.getElementById('myChart6').getContext('2d');
+    // var chart = new Chart(ctx, {
+    //     // The type of chart we want to create
+    //     type: 'bar',
+
+    //     // The data for our dataset
+    //     data: {
+    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //         datasets: [{
+    //             label: 'My First dataset',
+    //             backgroundColor: '#0083ed',
+    //             borderColor: '#0083ed',
+    //             data: [0, 10, 5, 2, 20, 30, 45]
+    //         }]
+    //     }
+    // });
 
     //product page charts --end
     
