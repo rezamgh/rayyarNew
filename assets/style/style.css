@@ -1587,3 +1587,23 @@ footer {
     background: #0083ed;
     border: 1px solid #0083ed !important;
 }
+
+.mega-menu .dropdown-menu {
+    text-align: right;
+    background: #0083ed !important;
+    color: #fff !important;
+    margin-top: -6px;
+    border-radius: 2px !important;
+}
+.mega-menu h5 {
+    font-weight: bold;
+}
+
+.mega-menu a {
+    color: #fff !important;
+}
+
+.mega-menu a:hover {
+    background: #0083ed !important;
+    opacity: .5 !important;
+}
