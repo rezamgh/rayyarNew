@@ -438,7 +438,7 @@
 
     <div class="w-100 float-right" style="background: #f0f0f7;">
         <div class="index-wrap2">
-            <div class="swiper-container1">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="news-slider-card-wrap">
@@ -841,6 +841,24 @@ var bar = new ProgressBar.Circle('.progress-circle6', {
 bar.text.style.fontSize = '1.5rem';
 
 bar.animate(1.0);  // Number from 0.0 to 1.0
+
+var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1200: { slidesPerView: 3 },
+            992: { slidesPerView: 2 },
+            600: { slidesPerView: 1 }
+        }
+    });
 
     </script>
 
