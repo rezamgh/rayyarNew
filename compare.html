@@ -647,7 +647,7 @@
 
     <div class="w-100 float-right" style="background: #f0f0f7;">
         <div class="index-wrap2">
-            <div class="swiper-container1">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="news-slider-card-wrap">
@@ -849,73 +849,6 @@
         </div>
     </div>
 
-    <div class="w-100 float-right">
-        <div class="product-page-wrap">
-            <div class="rayyar-product-box mt-3">
-                <div class="rayyar-product-box-header mt-3 text-right">
-                    <ul class="d-flex flex-row">
-                        <li class="active-tab">فروشندگان</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="rayyar-product-box-content">
-                <div class="swiper-container2">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="d-flex justify-content-center align-items-center flex-column">
-                            <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" width="250px" alt="">
-                            <p class="text-center my-3">آیپد پرو 11 اینچ 2018 اپل</p>
-                            <a href="#">
-                                <button class="product-slider-btn">مشاهده محصول</button>
-                            </a>
-                            </div>
-                          </div>  
-                          <div class="swiper-slide">
-                              <div class="d-flex justify-content-center align-items-center flex-column">
-                              <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" width="250px" alt="">
-                              <p class="text-center my-3">آیپد پرو 11 اینچ 2018 اپل</p>
-                              <a href="#">
-                                  <button class="product-slider-btn">مشاهده محصول</button>
-                              </a>
-                              </div>
-                            </div>   
-                            <div class="swiper-slide">
-                                <div class="d-flex justify-content-center align-items-center flex-column">
-                                <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" width="250px" alt="">
-                                <p class="text-center my-3">آیپد پرو 11 اینچ 2018 اپل</p>
-                                <a href="#">
-                                    <button class="product-slider-btn">مشاهده محصول</button>
-                                </a>
-                                </div>
-                              </div>                    
-                            <div class="swiper-slide">
-                                <div class="d-flex justify-content-center align-items-center flex-column">
-                                <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" width="250px" alt="">
-                                <p class="text-center my-3">آیپد پرو 11 اینچ 2018 اپل</p>
-                                <a href="#">
-                                    <button class="product-slider-btn">مشاهده محصول</button>
-                                </a>
-                                </div>
-                            </div>                     
-                            <div class="swiper-slide">
-                                <div class="d-flex justify-content-center align-items-center flex-column">
-                                <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" width="250px" alt="">
-                                <p class="text-center my-3">آیپد پرو 11 اینچ 2018 اپل</p>
-                                <a href="#">
-                                    <button class="product-slider-btn">مشاهده محصول</button>
-                                </a>
-                                </div>
-                                </div>
-                    </div>
-                    <!-- Add Arrows -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="w-100 float-right text-center mx-auto mt-5 mb-3">
         <div class="d-flex justify-content-center">
             <div id="toTop" class="totop-icon">
@@ -981,6 +914,7 @@
     <script src="assets/script/main.js"></script>
 
     <script>
+        
                 var swiper = new Swiper('.swiper-container1', {
         slidesPerView: 3,
         spaceBetween: 15,
@@ -1014,6 +948,24 @@
           1200: { slidesPerView: 3 },
           992: { slidesPerView: 2 },
           600: { slidesPerView: 1 }
+        }
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1200: { slidesPerView: 3 },
+            992: { slidesPerView: 2 },
+            600: { slidesPerView: 1 }
         }
     });
 
