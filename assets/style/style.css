@@ -1097,6 +1097,7 @@ footer {
 .swiper-container1 {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .news-slider-card-wrap {
@@ -1148,6 +1149,12 @@ footer {
 
 .index-wrap {
     width: 60%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.index-wrap2 {
+    width: 85%;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -1606,4 +1613,27 @@ footer {
 .mega-menu a:hover {
     background: #0083ed !important;
     opacity: .5 !important;
+}
+
+.page-wrap {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.ads-box img {
+    width: 100%;
+    height: 300px;
+}
+
+.category-product-box-wrap {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.category-product-box-header img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }

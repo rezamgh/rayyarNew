@@ -174,6 +174,9 @@ $(document).ready(function(){
     var swiper = new Swiper('.swiper-container2', {
         slidesPerView: 4,
         spaceBetween: 0,
+        autoplay: {
+            delay: 3000,
+            },
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -197,6 +200,9 @@ $(document).ready(function(){
         slidesPerView: 4,
         spaceBetween: 15,
         loop: true,
+        autoplay: {
+            delay: 3000,
+            },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
