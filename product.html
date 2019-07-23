@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
 
     <title>رای یار &nbsp;&nbsp;| &nbsp;&nbsp;محصول</title>
 </head>
+
 <body>
     
     <header>
@@ -898,7 +900,7 @@
                                     <div style="font-size: 12px; color: #002f5f; margin-top: 80px; margin-right: 20px;">
                                         شما هم می‌توانید در مورد این کالا نظر بدهید
                                     </div>
-                                    <button class="add-cm-btn mt-4">
+                                    <button data-toggle="modal" data-target="#LoginAlertModal" class="add-cm-btn mt-4">
                                         افزودن نظر جدید
                                     </button>
                                 </div>
@@ -1206,8 +1208,8 @@
     </div>
 
     <div class="w-100 float-right">
-        <div class="product-page-wrap">
-            <div class="swiper-container">
+        <div class="product-page-wrap slider-relative">
+            <div id="news-swiper-container" class="swiper-container news-swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#">
@@ -1321,9 +1323,10 @@
                     </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
@@ -1546,6 +1549,47 @@
         </div>
     </div>
 
+    <div class="img-viewer float-right w-100">
+        <div class="img-viewer-content float-right w-100 h-100 d-flex align-items-center justify-content-center">
+            <!-- <img class="img-viewer-holder" src="#"> -->
+            <div class="swiper-container4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/2311015.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                                <img src="assets/img/2311059.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                    <img src="assets/img/2311097.jpg" alt="">
+                                </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+            <button class="close-viewer">بستن</button>
+        </div>
+    </div>
+
+    <div class="modal" id="LoginAlertModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <div class="AddInterestModal-header d-flex flex-row">
+                    <div class="mr-3" data-dismiss="modal"><i class="fas fa-times"></i></div>
+                    <div class="mx-auto">اخطار !</div>
+                </div>
+                <div class="text-center modal-body p-4">
+                    <p class="title-color1">
+                        برای مشاهده همه فیلترها واعمال چند‌سطحی فیلترها ابتدا باید کاربری خود را به ویژه ارتقا دهید
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-wrap">
             <div class="container">
@@ -1583,29 +1627,6 @@
         </div>
     </footer>
 
-    <div class="img-viewer float-right w-100">
-        <div class="img-viewer-content float-right w-100 h-100 d-flex align-items-center justify-content-center">
-            <!-- <img class="img-viewer-holder" src="#"> -->
-            <div class="swiper-container4">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/img/2311015.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                                <img src="assets/img/2311059.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img src="assets/img/2311097.jpg" alt="">
-                                </div>
-                    </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-            </div>
-            <button class="close-viewer">بستن</button>
-        </div>
-    </div>
-
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -1624,6 +1645,112 @@
             prevEl: '.swiper-button-prev',
         },
     });
+    </script>
+
+    <script>
+    
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#7a3997',
+                borderColor: '#7a3997',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart2').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#e81159',
+                borderColor: '#e81159',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart3').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'radar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#5bc84d',
+                borderColor: '#5bc84d',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart4').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#0083ed',
+                borderColor: '#0083ed',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart5').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#0083ed',
+                borderColor: '#0083ed',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+
+    var ctx = document.getElementById('myChart6').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: '#0083ed',
+                borderColor: '#0083ed',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        }
+    });
+    
     </script>
 
 </body>

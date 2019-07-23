@@ -264,6 +264,24 @@ $(document).ready(function(){
             600: { slidesPerView: 1 }
         }
     });
+
+    var swiper = new Swiper('#news-swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1200: { slidesPerView: 3 },
+            992: { slidesPerView: 2 },
+            600: { slidesPerView: 1 }
+        }
+    });
     //product page news swiper slider --end
 
 

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" href="assets/img/logo (2).png">
+
+    <title>صفحه پروفایل</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header-wrap">
+            <div class="header-container d-flex">
+
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/img/Group 3057.png" alt="رای یار" title="رای یار">
+                    </a>
+                </div>
+
+                <div class="header-nav">
+                    <nav>
+                        <ul class="d-flex">
+                            <li><a href="#">صفحه اصلی</a></li>
+                            <li><a href="#">مقایسه</a></li>
+                            <li><a href="#">محصولات</a></li>
+                            <li><a href="#">بلاگ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-profile mr-auto">
+                        <div class="dropdown">
+                                <div class="d-flex flex-row profile-navbar" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mt-1"><i class="fas fa-chevron-down"></i></span>
+                                    <div class="profile-navbar-pic mx-2">
+                                      <img src="assets/img/prof2.png" alt="">
+                                  </div>
+                                  <span style="font-size: 14px; font-weight: bold; color: #0083ed">کاربر</span>
+                                  <span style="font-size: 14px; font-weight: bold; color: #0083ed">خوش آمدید</span>
+                                </div>
+                                <div class="dropdown-menu profile-navbar-menu text-right" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" style="color: #6e6e6e; font-size: 14px" href="#"><i class="fas fa-user"></i> پروفایل</a>
+                                  <a class="dropdown-item" style="color: #6e6e6e; font-size: 14px" href="#"><i class="fas fa-envelope"></i> پیام‌ها</a>
+                                  <a class="dropdown-item" style="color: #6e6e6e; font-size: 14px" href="settings.html"><i class="fas fa-cog"></i> تنظیمات</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" style="color: #6e6e6e; font-size: 14px" href="#" data-toggle="modal" data-target="#LogOutModal"><i class="fas fa-power-off"></i> خروج از حساب کاربری</a>
+                                </div>
+                              </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-page-wrap" style="margin-top: 80px;">
+        <div class="profile-page-right">
+            <div class="profile-with-header-box">
+                <div class="profile-with-header-box-header"></div>
+                <div class="profile-with-header-box-body" style="padding: 0 !important">
+                    <div class="profile-with-header-box-profile-pic text-center">
+                        <img src="assets/img/prof2.png" alt="">
+                    </div>
+                    <div class="change-profile-pic text-center my-3">
+                        <button data-toggle="modal" data-target="#ChangePicModal">تعویض عکس پروفایل</button>
+                    </div>
+                    <div class="profile-with-header-box-body-content text-center">
+                        <div class="title-color1-bold" style="font-size: 16px;">نام کاربر</div>
+                        <div class="content-color1" style="font-size: 14px;">کارشناس الکترونیک</div>
+                        <div class="text-center mt-3">
+                            <div>
+                                <button class="profile-msg-btn">پیام ها</button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div class="text-center profile-follow-status" style="cursor: pointer;"><a class="title-color1-bold" href="changepassword.html">تغییر رمز</a></div>
+                            <div data-toggle="modal" data-target="#LogOutModal" class="text-center profile-follow-status title-color1-bold" style="border-right: 1px solid #cdcdcd; cursor: pointer;">خروج از حساب</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-with-header-box mt-3">
+                <div class="profile-with-header-box-header">کاربران دنبال‌کننده</div>
+                <div class="profile-with-header-box-body">
+                    <div class="my-3 text-center">
+                        <button data-toggle="modal" data-target="#AddFollowersModal" class="add-btn">افزودن <i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="profile-search-form">
+                        <form action="" class="d-flex flex-row">
+                            <input type="text" placeholder="جستجو کنید">
+                            <button class="profile-search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="followers-profile-pic" style="position: relative">
+                                <img src="assets/img/prof2.png" alt="">
+                                <span class="online-spot"></span>
+                            </div>
+                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="followers-profile-pic" style="position: relative">
+                                <img src="assets/img/prof2.png" alt="">
+                                <span class="online-spot"></span>
+                            </div>
+                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="followers-profile-pic" style="position: relative">
+                                <img src="assets/img/prof2.png" alt="">
+                                <span class="online-spot"></span>
+                            </div>
+                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="followers-profile-pic" style="position: relative">
+                                <img src="assets/img/prof2.png" alt="">
+                                <span class="online-spot"></span>
+                            </div>
+                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="followers-profile-pic" style="position: relative">
+                                <img src="assets/img/prof2.png" alt="">
+                                <span class="online-spot"></span>
+                            </div>
+                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-page-middle">
+
+            <div class="rayyar-top-border-box border2">
+                <div class="profile-newpost-wrap">
+                    <div class="text-right" style="color: #494949">
+                        ارسال مطلب جدید
+                    </div>
+                    <div class="mt-3">
+                        <textarea name="" id="" cols="30" rows="6"></textarea>
+                    </div>
+                    <div class="d-flex flex-row-reverse align-items-center">
+                        <button class="profile-send-post-btn mr-4">ارسال</button>
+                        <div class="mr-2">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="mr-2">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="mr-2">
+                            <i class="fas fa-paperclip"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-tab-content-header mt-3">
+                <ul class="d-flex flex-row text-center">
+                    <li id="profile-tab1" class="profile-tab-content-active-tab title-color1-bold">پست‌ها</li>
+                    <li id="profile-tab2" class="title-color1-bold">علاقه‌مندی‌ها</li>
+                    <li id="profile-tab3" class="title-color1-bold">پیام‌ها</li>
+                </ul>
+            </div>
+            <div class="profile-tab-content-1 mt-3">
+                <div class="profile-post-wrap">
+                    <div class="profile-post-header text-right">
+                        پست ها 
+                    </div>
+                    <div class="profile-post-body">
+                        <div class="d-flex justify-content-between">
+                            <div class="profile-post-body-author d-flex align-items-center">
+                                <div class="profile-post-body-author-pic">
+                                    <img src="assets/img/prof2.png" alt="">
+                                </div>
+                                <div class="text-right">
+                                    <div class="title-color1-bold" style="font-size: 14px">نام کاربر</div>
+                                    <div class="content-color1" style="font-size: 12px">کارشناس الکترونیک</div>
+                                </div>
+                            </div>
+                            <div class="content-color1" style="font-size: 10px;">
+                                20 دقیقه قبل <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <div class="profile-post-body-content">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 tit">
+                                        <p style="text-align: justify; line-height: 25px; font-size: 14px">شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ با رقابت سختی که در طراحی سری محصولات حرفه‌ای مخصوص بازی دارند، از این رقابت به‌عنوان فرصتی برای قدرت‌نمایی استفاده می‌کنند. به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی، صفحه‌نمایش باکیفیت و امکانات متعدد هستند.</p>
+                                    </div>
+                                    <div class="col-md-4 post-picture">
+                                        <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex flex-row-reverse">
+                            <div class="post-frown mr-1"><i class="far fa-frown"></i></div>
+                            <div class="post-smile mr-1"><i class="far fa-smile"></i></div>
+                            <div class="post-thumbs-up mr-1"><span>22</span> <i class="far fa-thumbs-up"></i></div>
+                            <div class="post-thumbs-down mr-1"><span>16</span> <i class="far fa-thumbs-down"></i></div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="send-post-reply-form">
+                                <form action="" class="d-flex flex-row">
+                                    <input type="text" placeholder="">
+                                    <button class="send-post-reply-btn">ارسال</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-post-wrap mt-3">
+                        <div class="profile-post-header text-right">
+                            پست ها 
+                        </div>
+                        <div class="profile-post-body">
+                            <div class="d-flex justify-content-between">
+                                <div class="profile-post-body-author d-flex align-items-center">
+                                    <div class="profile-post-body-author-pic">
+                                        <img src="assets/img/prof2.png" alt="">
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="title-color1-bold" style="font-size: 14px">نام کاربر</div>
+                                        <div class="content-color1" style="font-size: 12px">کارشناس الکترونیک</div>
+                                    </div>
+                                </div>
+                                <div class="content-color1" style="font-size: 10px;">
+                                    20 دقیقه قبل <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                            </div>
+                            <div class="profile-post-body-content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-8 tit">
+                                            <p style="text-align: justify; line-height: 25px; font-size: 14px">شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ با رقابت سختی که در طراحی سری محصولات حرفه‌ای مخصوص بازی دارند، از این رقابت به‌عنوان فرصتی برای قدرت‌نمایی استفاده می‌کنند. به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی، صفحه‌نمایش باکیفیت و امکانات متعدد هستند.</p>
+                                        </div>
+                                        <div class="col-md-4 post-picture">
+                                            <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-row-reverse">
+                                <div class="post-frown mr-1"><i class="far fa-frown"></i></div>
+                                <div class="post-smile mr-1"><i class="far fa-smile"></i></div>
+                                <div class="post-thumbs-up mr-1"><span>22</span> <i class="far fa-thumbs-up"></i></div>
+                                <div class="post-thumbs-down mr-1"><span>16</span> <i class="far fa-thumbs-down"></i></div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="send-post-reply-form">
+                                    <form action="" class="d-flex flex-row">
+                                        <input type="text" placeholder="">
+                                        <button class="send-post-reply-btn">ارسال</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-post-wrap mt-3">
+                            <div class="profile-post-header text-right">
+                                پست ها 
+                            </div>
+                            <div class="profile-post-body">
+                                <div class="d-flex justify-content-between">
+                                    <div class="profile-post-body-author d-flex align-items-center">
+                                        <div class="profile-post-body-author-pic">
+                                            <img src="assets/img/prof2.png" alt="">
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="title-color1-bold" style="font-size: 14px">نام کاربر</div>
+                                            <div class="content-color1" style="font-size: 12px">کارشناس الکترونیک</div>
+                                        </div>
+                                    </div>
+                                    <div class="content-color1" style="font-size: 10px;">
+                                        20 دقیقه قبل <i class="fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <div class="profile-post-body-content">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-8 tit">
+                                                <p style="text-align: justify; line-height: 25px; font-size: 14px">شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ با رقابت سختی که در طراحی سری محصولات حرفه‌ای مخصوص بازی دارند، از این رقابت به‌عنوان فرصتی برای قدرت‌نمایی استفاده می‌کنند. به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی، صفحه‌نمایش باکیفیت و امکانات متعدد هستند.</p>
+                                            </div>
+                                            <div class="col-md-4 post-picture">
+                                                <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row-reverse">
+                                    <div class="post-frown mr-1"><i class="far fa-frown"></i></div>
+                                    <div class="post-smile mr-1"><i class="far fa-smile"></i></div>
+                                    <div class="post-thumbs-up mr-1"><span>22</span> <i class="far fa-thumbs-up"></i></div>
+                                    <div class="post-thumbs-down mr-1"><span>16</span> <i class="far fa-thumbs-down"></i></div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="send-post-reply-form">
+                                        <form action="" class="d-flex flex-row">
+                                            <input type="text" placeholder="">
+                                            <button class="send-post-reply-btn">ارسال</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-post-wrap mt-3">
+                                <div class="profile-post-header text-right">
+                                    پست ها 
+                                </div>
+                                <div class="profile-post-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="profile-post-body-author d-flex align-items-center">
+                                            <div class="profile-post-body-author-pic">
+                                                <img src="assets/img/prof2.png" alt="">
+                                            </div>
+                                            <div class="text-right">
+                                                <div class="title-color1-bold" style="font-size: 14px">نام کاربر</div>
+                                                <div class="content-color1" style="font-size: 12px">کارشناس الکترونیک</div>
+                                            </div>
+                                        </div>
+                                        <div class="content-color1" style="font-size: 10px;">
+                                            20 دقیقه قبل <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+                                    <div class="profile-post-body-content">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-8 tit">
+                                                    <p style="text-align: justify; line-height: 25px; font-size: 14px">شرکت‌های بزرگ تولیدکننده‌ی لپ‌تاپ با رقابت سختی که در طراحی سری محصولات حرفه‌ای مخصوص بازی دارند، از این رقابت به‌عنوان فرصتی برای قدرت‌نمایی استفاده می‌کنند. به همین دلیل معمولا تمام لپ‌تاپ‌های مخصوص بازی مجهز به سخت‌افزارهای به‌روز و قوی، صفحه‌نمایش باکیفیت و امکانات متعدد هستند.</p>
+                                                </div>
+                                                <div class="col-md-4 post-picture">
+                                                    <img src="assets/img/c5e4cc0d-b54e-4dda-9f46-efb49c320d03.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex flex-row-reverse">
+                                        <div class="post-frown mr-1"><i class="far fa-frown"></i></div>
+                                        <div class="post-smile mr-1"><i class="far fa-smile"></i></div>
+                                        <div class="post-thumbs-up mr-1"><span>22</span> <i class="far fa-thumbs-up"></i></div>
+                                        <div class="post-thumbs-down mr-1"><span>16</span> <i class="far fa-thumbs-down"></i></div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="send-post-reply-form">
+                                            <form action="" class="d-flex flex-row">
+                                                <input type="text" placeholder="">
+                                                <button class="send-post-reply-btn">ارسال</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="profile-tab-content-2 mt-3">
+                
+            </div>
+            <div class="profile-tab-content-3 mt-3">
+                
+            </div>
+            
+        </div>
+        <div class="profile-page-left">
+            <div class="profile-with-header-box">
+                <div class="profile-with-header-box-header">
+                    علاقه‌مندی‌ها
+                </div>
+                <div class="profile-with-header-box-body px-2">
+                    <div class="my-3 text-center">
+                        <button data-toggle="modal" data-target="#AddInterestModal" class="add-btn">افزودن <i class="fas fa-plus"></i></button>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#">
+                            <div class="category-box">
+                                <div class="d-flex justify-content-around">
+                                    <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                    <div>
+                                        <img src="assets/img/icon/Group 2804.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="LogOutModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <div class="text-center modal-body">
+                    آیا میخواهید از حساب کاربری خود خارج شوید؟
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="profile-msg-btn">بله</button>
+                    <button class="profile-msg-btn mr-2" data-dismiss="modal">خیر</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="ChangePicModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <div class="text-center modal-body">
+                    عکس مورد نظر خود را انتخاب کنید
+                </div>
+
+                <div class="change-profile-pic text-center my-3">
+                        <div class="file-upload change-profile-pic-btn">
+                            <span>عوض کردن عکس پروفایل</span>
+                            <input type="file" name="FileAttachment" id="FileAttachment" class="upload" />
+                        </div>
+                </div>
+
+                <div class="d-flex justify-content-center my-3">
+                    <button class="profile-msg-btn">تایید</button>
+                    <button class="profile-msg-btn mr-2" data-dismiss="modal">انصراف</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="AddFollowersModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <div class="AddInterestModal-header text-center">
+                    کاربران
+                </div>
+
+                <div class="text-center modal-body">
+                    <div class="profile-search-form">
+                        <form action="" class="d-flex flex-row">
+                            <input type="text" placeholder="جستجو کنید">
+                            <button class="profile-search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-center my-3 mx-auto w-75">
+                        <div class="mt-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="followers-profile-pic" style="position: relative">
+                                        <img src="assets/img/prof2.png" alt="">
+                                        <span class="online-spot"></span>
+                                    </div>
+                                    <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                                    <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mt-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="followers-profile-pic" style="position: relative">
+                                            <img src="assets/img/prof2.png" alt="">
+                                            <span class="online-spot"></span>
+                                        </div>
+                                        <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                                        <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="mt-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="followers-profile-pic" style="position: relative">
+                                                <img src="assets/img/prof2.png" alt="">
+                                                <span class="online-spot"></span>
+                                            </div>
+                                            <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                                            <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="mt-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="followers-profile-pic" style="position: relative">
+                                                    <img src="assets/img/prof2.png" alt="">
+                                                    <span class="online-spot"></span>
+                                                </div>
+                                                <div class="title-color1-bold" style="font-size: 14px;">نام کاربر</div>
+                                                <div class="content-color1" style="font-size: 12px">آنلاین</div>
+                                            </div>
+                                        </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="profile-msg-btn">تایید</button>
+                    <button class="profile-msg-btn mr-2" data-dismiss="modal">بستن</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="AddInterestModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="AddInterestModal-header text-center">
+                    علاقه‌مندی‌ها
+                </div>
+
+                <div class="text-center modal-body">
+
+                    <div class="profile-search-form">
+                        <form action="" class="d-flex flex-row">
+                            <input type="text" placeholder="جستجو کنید">
+                            <button class="profile-search-btn"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="container-fluid my-3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="category-box">
+                                    <div class="d-flex justify-content-around">
+                                        <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                        <div>
+                                            <img src="assets/img/icon/Group 2804.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="category-box">
+                                    <div class="d-flex justify-content-around">
+                                        <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                        <div>
+                                            <img src="assets/img/icon/Group 2804.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="category-box">
+                                        <div class="d-flex justify-content-around">
+                                            <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                            <div>
+                                                <img src="assets/img/icon/Group 2804.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="category-box">
+                                            <div class="d-flex justify-content-around">
+                                                <div style="color: #8288ac; font-size: 14px;">موبایل و تبلت</div>
+                                                <div>
+                                                    <img src="assets/img/icon/Group 2804.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-3">
+                    <button class="profile-msg-btn">تایید</button>
+                    <button class="profile-msg-btn mr-2" data-dismiss="modal">بستن</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 30px">
+        <div class="footer-wrap">
+            <div class="container">
+                <div class="row pb-5" style="border-bottom: 1px solid #bebebe;">
+                    <div class="col-md-3 text-right mt-auto" style="padding: 0 !important">
+                        <ul>
+                            <li><a href="#">پرسش و پاسخ</a></li>
+                            <li class="mt-1"><a href="#">بلاگ رای‌یار</a></li>
+                            <li class="mt-1"><a href="#">دسته‌بندی موضوعی</a></li>
+                            <li class="mt-1"><a href="#">صفحه‌اصلی</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-right mt-auto" style="padding: 0 !important">
+                        <ul>
+                            <li><a href="#">درباره رای‌یار</a></li>
+                            <li class="mt-1"><a href="#">حریم خصوصی</a></li>
+                            <li class="mt-1"><a href="#">راهنمای سایت</a></li>
+                            <li class="mt-1"><a href="#">درباره عضویت ویژه</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-left footer-pic1 mt-auto" style="padding: 0 !important">
+                        <img src="assets/img/c4abfc14.png" alt="">
+                        <img src="assets/img/1090a120.png" alt="">
+                    </div>
+                    <div class="col-md-3 text-left footer-pic2 mt-auto" style="padding: 0 !important">
+                        <img src="assets/img/logo.aspx.png" alt="">
+                    </div>
+                </div>
+                <div class="row py-3 text-center">
+                    <p class="copy-right mx-auto" style="color: #5d5959; font-size: 12px; font-weight: bold;">
+                        استفاده از مطالب این سایت با ذکر منبع بلامانع می‌باشد. تمام حقوق این سایت محفوظ و متعلق به شرکت «رای‌یار» می‌باشد
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script/main.js"></script>
+
+    <script>
+        $("#profile-tab2").click(function(){
+        $("#profile-tab1").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab3").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab2").addClass("profile-tab-content-active-tab");
+        $(".profile-tab-content-1").hide();
+        $(".profile-tab-content-3").hide();
+        $(".list-content2").show();
+    })
+
+    $("#profile-tab1").click(function(){
+        $("#profile-tab3").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab2").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab1").addClass("profile-tab-content-active-tab");
+        $(".profile-tab-content-2").hide();
+        $(".profile-tab-content-3").hide();
+        $(".profile-tab-content-1").show();
+    })
+
+    $("#profile-tab3").click(function(){
+        $("#profile-tab1").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab2").removeClass("profile-tab-content-active-tab");
+        $("#profile-tab3").addClass("profile-tab-content-active-tab");
+        $(".profile-tab-content-1").hide();
+        $(".profile-tab-content-2").hide();
+        $(".profile-tab-content-").show();
+    })
+    </script>
+
+</body>
+</html>
