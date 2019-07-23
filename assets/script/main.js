@@ -1,112 +1,5 @@
 $(document).ready(function(){
 
-    //product page charts
-
-    // var ctx = document.getElementById('myChart').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'bar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#7a3997',
-    //             borderColor: '#7a3997',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    // var ctx = document.getElementById('myChart2').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'bar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#e81159',
-    //             borderColor: '#e81159',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    // var ctx = document.getElementById('myChart3').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'radar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#5bc84d',
-    //             borderColor: '#5bc84d',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    // var ctx = document.getElementById('myChart4').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'bar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#0083ed',
-    //             borderColor: '#0083ed',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    // var ctx = document.getElementById('myChart5').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'bar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#0083ed',
-    //             borderColor: '#0083ed',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    // var ctx = document.getElementById('myChart6').getContext('2d');
-    // var chart = new Chart(ctx, {
-    //     // The type of chart we want to create
-    //     type: 'bar',
-
-    //     // The data for our dataset
-    //     data: {
-    //         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //         datasets: [{
-    //             label: 'My First dataset',
-    //             backgroundColor: '#0083ed',
-    //             borderColor: '#0083ed',
-    //             data: [0, 10, 5, 2, 20, 30, 45]
-    //         }]
-    //     }
-    // });
-
-    //product page charts --end
-    
-
     //product image viewer
 
     $(document).on('click','.product-sub-img-holder img' ,function(){
@@ -132,6 +25,7 @@ $(document).ready(function(){
 
     //show more and less --end
 
+
     //product tab content
 
     $("#tab2").click(function(){
@@ -149,8 +43,6 @@ $(document).ready(function(){
     })
 
     //product tab content --end
-
-
 
 
     //product questions
@@ -220,30 +112,6 @@ $(document).ready(function(){
     //product page user comment and question range slider --end
 
 
-    //product page products swiper slider
-
-    var swiper = new Swiper('.swiper-container2', {
-        slidesPerView: 4,
-        spaceBetween: 0,
-        autoplay: {
-            delay: 3000,
-            },
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          1200: { slidesPerView: 3 },
-          992: { slidesPerView: 2 },
-          600: { slidesPerView: 1 }
-        }
-    });
-
-    //product page products swiper slider --end
-
-
-
 
     //product page news swiper slider
 
@@ -265,7 +133,25 @@ $(document).ready(function(){
         }
     });
 
-    var swiper = new Swiper('#news-swiper-container', {
+    var swiper = new Swiper('.swiper-container2', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 3000,
+            },
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1200: { slidesPerView: 3 },
+          992: { slidesPerView: 2 },
+          600: { slidesPerView: 1 }
+        }
+    });
+
+    var swiper = new Swiper('.news-swiper-container-width', {
         slidesPerView: 3,
         spaceBetween: 15,
         loop: true,
@@ -285,25 +171,6 @@ $(document).ready(function(){
     //product page news swiper slider --end
 
 
-    //index page news swiper slider
-
-    var swiper = new Swiper('.swiper-container1', {
-        slidesPerView: 3,
-        spaceBetween: 15,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            1200: { slidesPerView: 2 },
-            992: { slidesPerView: 1 },
-        }
-    });
-    //index page news swiper slider --end
-
-
-
     // back to top btn
 
     $("#toTop").click(function () {
@@ -311,6 +178,5 @@ $(document).ready(function(){
     });
 
     // back to top btn --end
-    
 
 });

@@ -437,8 +437,8 @@
     </div>
 
     <div class="w-100 float-right" style="background: #f0f0f7;">
-        <div class="index-wrap2">
-            <div class="swiper-container">
+        <div class="index-wrap2 slider-relative">
+            <div class="swiper-container news-swiper-container news-swiper-container-width">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#">
@@ -552,9 +552,10 @@
                     </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 
@@ -635,235 +636,206 @@
     <script src="node_modules/progressbar.js-master/dist/progressbar.min.js"></script>
     <script src="assets/script/main.js"></script>
     <script>
-            var swiper = new Swiper('.swiper-container1', {
-        slidesPerView: 3,
-        spaceBetween: 15,
-        autoplay: {
-        delay: 3000,
-        },
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            1200: { slidesPerView: 2 },
-            992: { slidesPerView: 1 },
-        }
-    });
 
-
-
-
-
-
-
-
+    // index page circle progress bars
 
     var bar = new ProgressBar.Circle('.progress-circle1', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      
+      var bar = new ProgressBar.Circle('.progress-circle2', {
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      
+      
+      var bar = new ProgressBar.Circle('.progress-circle3', {
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      
+      
+      var bar = new ProgressBar.Circle('.progress-circle4', {
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      
+      
+      
+      var bar = new ProgressBar.Circle('.progress-circle5', {
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
+      
+      
+      
+      var bar = new ProgressBar.Circle('.progress-circle6', {
+        color: '#2699fb',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+          autoStyleContainer: false
+        },
+        from: { color: '#9dc7ec', width: 1 },
+        to: { color: '#2699fb', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+          circle.path.setAttribute('stroke', state.color);
+          circle.path.setAttribute('stroke-width', state.width);
+      
+          var value = Math.round(circle.value() * 100);
+          if (value === 0) {
+            circle.setText('');
+          } else {
+            circle.setText(value);
+          }
+      
+        }
+      });
+      bar.text.style.fontSize = '1.5rem';
+      
+      bar.animate(1.0);  // Number from 0.0 to 1.0
 
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
 
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-
-
-
-
-
-
-
-
-
-var bar = new ProgressBar.Circle('.progress-circle2', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-var bar = new ProgressBar.Circle('.progress-circle3', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-var bar = new ProgressBar.Circle('.progress-circle4', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-
-var bar = new ProgressBar.Circle('.progress-circle5', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
-
-
-
-var bar = new ProgressBar.Circle('.progress-circle6', {
-  color: '#2699fb',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 4,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#9dc7ec', width: 1 },
-  to: { color: '#2699fb', width: 4 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontSize = '1.5rem';
-
-bar.animate(1.0);  // Number from 0.0 to 1.0
+      // index page circle progress bars --end
 
 var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 15,
         loop: true,
         autoplay: {
