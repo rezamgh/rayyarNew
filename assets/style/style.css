@@ -58,7 +58,7 @@ header {
 }
 
 .header-wrap {
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
 }
 
@@ -135,7 +135,7 @@ header {
 .mega-menu-wrap nav {
     background: #0083ed;
     height: 62px;
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
 }
 
@@ -209,7 +209,7 @@ header {
 }
 
 .product-page-wrap {
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -1156,13 +1156,13 @@ footer {
 }
 
 .index-wrap {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding: 30px 0;
 }
 
 .index-wrap2 {
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -1352,7 +1352,7 @@ footer {
 }
 
 .profile-page-wrap {
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
 }
 
@@ -1648,7 +1648,7 @@ footer {
 }
 
 .page-wrap {
-    width: 85%;
+    width: 97%;
     margin: 0 auto;
 }
 
@@ -1951,10 +1951,12 @@ footer {
 
 #AddInterestModal .modal-dialog {
     max-width: 70% !important;
+    margin: 60px auto;
 }
 
 #AddCompareItemModal .modal-dialog {
     max-width: 70% !important;
+    margin: 60px auto;
 }
 
 .slider-relative {
@@ -1976,7 +1978,7 @@ footer {
 .AddInterestModal-header {
     height: 60px;
     line-height: 60px;
-    background: #e81159;
+    background: #0083ed;
     color: #fff;
 }
 
@@ -2064,3 +2066,121 @@ footer {
 .ourteam-card-title img {
     width: 40px;
 }
+
+.LoginAlertModal-header {
+    height: 60px;
+    line-height: 60px;
+    background: #e81159;
+    color: #fff;
+}
+
+#MainMenu {
+    padding:0;
+}
+
+.result-bucket li {
+    padding: 7px 15px;
+}
+.instant-results {
+    background: #fff;
+    width: 100%;
+    color: gray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .175);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .175);
+    display: none;
+    z-index: 9;
+}
+.form-search {
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+}
+.search-form {
+    position: relative;
+    max-width: 100%;
+}
+.result-link {
+    color: #4f7593;
+}
+.result-link .media-body {
+    font-size: 13px;
+    color: gray;
+}
+.result-link .media-heading {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4f7593;
+}
+.result-link:hover,
+.result-link:hover .media-heading,
+.result-link:hover .media-body {
+    text-decoration: none;
+    color: #4f7593
+}
+.result-link .media-object {
+    width: 100px;
+}
+.result-entry + .result-entry {
+    border-top:1px solid #ddd;
+}
+.top-keyword {
+    margin: 3px 0 0;
+    font-size: 12px;
+    font-family: Arial;
+}
+.top-keyword a {
+    font-size: 12px;
+    font-family: Arial;
+}
+.top-keyword a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main-search-bar {
+    width: 600px;
+}
+
+.input-group-btn button {
+    color: rgb(165, 165, 165);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-group {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.input-group input {
+    width: 95%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.instant-results {
+    margin-top: 10px;
+}
+
+.media-left img {
+    width: 100px;
+}
+
+.media-body {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* #user-login {
+    display: none;
+} */
